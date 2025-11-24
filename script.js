@@ -73,7 +73,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe elements for scroll animation
 document.addEventListener('DOMContentLoaded', () => {
-    const animateElements = document.querySelectorAll('.skill-card, .project-card, .about-text, .contact-item, .contact-form');
+    const animateElements = document.querySelectorAll('.skill-category, .project-card, .profile-card, .about-card, .contact-card, .contact-form');
     animateElements.forEach(el => {
         el.classList.add('fade-in');
         observer.observe(el);
@@ -90,10 +90,11 @@ contactForm.addEventListener('submit', (e) => {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
+    const subject = document.getElementById('subject') ? document.getElementById('subject').value : '';
     const message = document.getElementById('message').value;
 
     // Simple validation
-    if (!name || !email || !message) {
+    if (!name || !email || !subject || !message) {
         alert('Vui lòng điền đầy đủ thông tin bắt buộc!');
         return;
     }
@@ -113,7 +114,7 @@ contactForm.addEventListener('submit', (e) => {
 
     // Simulate API call
     setTimeout(() => {
-        alert('Cảm ơn bạn đã liên hệ! Tôi sẽ phản hồi sớm nhất có thể.');
+        alert(`Cảm ơn bạn đã liên hệ về "${subject}"! Tôi sẽ phản hồi sớm nhất có thể.`);
         contactForm.reset();
         submitButton.textContent = originalText;
         submitButton.disabled = false;

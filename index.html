@@ -16,6 +16,7 @@
             <div class="container">
                 <div class="nav-wrapper">
                     <div class="logo">
+                        <span class="logo-badge">P</span>
                         <a href="#home">Portfolio</a>
                     </div>
                     <ul class="nav-menu" id="navMenu">
@@ -25,7 +26,10 @@
                         <li><a href="#projects" class="nav-link">Projects</a></li>
                         <li><a href="#contact" class="nav-link">Contact</a></li>
                     </ul>
-                    <a href="#" class="btn-cv" id="downloadCV">Download CV</a>
+                    <a href="#" class="btn btn-glass" id="downloadCV">
+                        <span class="btn-icon">⇩</span>
+                        Download CV
+                    </a>
                     <div class="hamburger" id="hamburger">
                         <span></span>
                         <span></span>
@@ -38,22 +42,51 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-image">
-                    <div class="avatar-wrapper">
-                        <img src="https://via.placeholder.com/300x300/2A63A5/FFFFFF?text=Avatar" alt="Avatar" class="avatar">
+        <div class="container hero-container">
+            <div class="hero-left">
+                <div class="hero-badge">
+                    <span>🔥</span>
+                    Welcome to my portfolio
+                </div>
+                <h1>
+                    Hi, I'm a
+                    <span class="gradient-text">Software Engineer</span>
+                </h1>
+                <p>
+                    Software Engineering Student – HUTECH. Passionate about building beautiful web & mobile
+                    applications with modern technologies.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-ghost">
+                        Contact Me
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <span class="stat-value">3+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value">10+</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value">4th</span>
+                        <span class="stat-label">Year Student</span>
                     </div>
                 </div>
-                <div class="hero-text">
-                    <h1 class="hero-title fade-in-up">
-                        Software Engineering Student
-                        <span class="highlight">HUTECH</span>
-                    </h1>
-                    <p class="hero-subtitle fade-in-up">
-                        Frontend (ReactJS/React Native) & Backend NodeJS Developer
-                    </p>
-                    <a href="#projects" class="btn-primary fade-in-up">Xem Dự Án</a>
+            </div>
+            <div class="hero-right">
+                <div class="hero-orbit">
+                    <div class="hero-circle">
+                        <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=600&q=80" alt="Avatar" />
+                    </div>
+                    <div class="hero-floating react">⚛</div>
+                    <div class="hero-floating backend">🧠</div>
+                    <div class="hero-floating database">🗄</div>
                 </div>
             </div>
         </div>
@@ -62,24 +95,52 @@
     <!-- About Me Section -->
     <section class="about" id="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Tôi là sinh viên năm 4 ngành <strong>Kỹ thuật phần mềm</strong> tại trường Đại học Công nghệ TP.HCM (HUTECH). 
-                        Với niềm đam mê công nghệ và phát triển phần mềm, tôi đang tìm kiếm cơ hội thực tập tại 
-                        <strong>FPT Software</strong> để nâng cao kỹ năng và tích lũy kinh nghiệm thực tế.
-                    </p>
-                    <p>
-                        Trong quá trình học tập, tôi đã thực hiện nhiều đồ án lớn về phát triển Web, Mobile và Backend. 
-                        Tôi có kinh nghiệm lập trình với các công nghệ hiện đại như ReactJS, React Native, NodeJS và 
-                        các công cụ quản lý database như MongoDB, Firebase.
-                    </p>
-                    <p>
-                        Với tư duy logic tốt, tôi yêu thích việc thiết kế UI/UX và phát triển các sản phẩm thực tế 
-                        có thể giải quyết các vấn đề cụ thể. Tôi luôn cố gắng học hỏi và cập nhật những công nghệ mới 
-                        để không ngừng cải thiện bản thân.
-                    </p>
+            <div class="section-heading">
+                <p class="section-label">About</p>
+                <h2>Về <span>Tôi</span></h2>
+                <p class="section-subtitle">
+                    Tìm hiểu thêm về hành trình học vấn và niềm đam mê phát triển phần mềm của tôi.
+                </p>
+            </div>
+            <div class="about-grid">
+                <div class="profile-card glass">
+                    <div class="profile-avatar">
+                        <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80" alt="Profile" />
+                    </div>
+                    <h3>Sinh Viên HUTECH</h3>
+                    <p class="profile-role">Kỹ Thuật Phần Mềm</p>
+                    <p class="profile-school">Đại học Công nghệ TP.HCM</p>
+                    <ul class="profile-info">
+                        <li><span>Địa điểm</span><strong>TP.HCM, Việt Nam</strong></li>
+                        <li><span>Năm học</span><strong>Sinh viên năm 4</strong></li>
+                        <li><span>Mục tiêu</span><strong>Thực tập tại FPT Software</strong></li>
+                        <li><span>Tốt nghiệp</span><strong>Dự kiến 2025</strong></li>
+                    </ul>
+                </div>
+                <div class="about-details">
+                    <article class="about-card glass">
+                        <h3>Giới Thiệu</h3>
+                        <p>
+                            Tôi là sinh viên năm 4 ngành <strong>Kỹ thuật phần mềm</strong> tại HUTECH. Với niềm đam mê công nghệ
+                            và phát triển sản phẩm thực tế, tôi đang tìm kiếm cơ hội thực tập tại <strong>FPT Software</strong>
+                            để nâng cao kỹ năng và đóng góp giá trị thật sự.
+                        </p>
+                    </article>
+                    <article class="about-card glass">
+                        <h3>Kinh Nghiệm Đồ Án</h3>
+                        <p>
+                            Tôi đã thực hiện nhiều đồ án lớn với vai trò Fullstack, bao gồm phát triển ứng dụng Web, Mobile
+                            và Backend. Thành thạo ReactJS, React Native, NodeJS, MongoDB và Firebase, tôi có khả năng xây dựng
+                            giải pháp end-to-end.
+                        </p>
+                    </article>
+                    <article class="about-card glass">
+                        <h3>Tư Duy & Định Hướng</h3>
+                        <p>
+                            Với tư duy logic tốt và niềm yêu thích UI/UX, tôi tập trung vào việc tạo ra trải nghiệm người dùng
+                            hiện đại, tối giản và giàu tính ứng dụng. Tôi luôn sẵn sàng học hỏi để bắt kịp xu hướng công nghệ 2025.
+                        </p>
+                    </article>
                 </div>
             </div>
         </div>
@@ -88,32 +149,117 @@
     <!-- Skills Section -->
     <section class="skills" id="skills">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
+            <div class="section-heading">
+                <p class="section-label">Skills</p>
+                <h2>Kỹ Năng <span>Chuyên Môn</span></h2>
+                <p class="section-subtitle">
+                    Tổng hợp các công nghệ tôi sử dụng hàng ngày cho Web, Mobile và Backend.
+                </p>
+            </div>
             <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">⚛️</div>
-                    <h3>Frontend</h3>
-                    <p>ReactJS, React Native, TailwindCSS</p>
+                <div class="skill-category glass">
+                    <div class="skill-header">
+                        <span>🧩</span>
+                        <div>
+                            <h3>Phát Triển Frontend</h3>
+                            <p>ReactJS, React Native, TailwindCSS</p>
+                        </div>
+                    </div>
+                    <ul class="skill-bars">
+                        <li>
+                            <span>ReactJS</span>
+                            <div class="bar"><span style="width: 90%"></span></div>
+                            <strong>90%</strong>
+                        </li>
+                        <li>
+                            <span>React Native</span>
+                            <div class="bar"><span style="width: 85%"></span></div>
+                            <strong>85%</strong>
+                        </li>
+                        <li>
+                            <span>TailwindCSS</span>
+                            <div class="bar"><span style="width: 80%"></span></div>
+                            <strong>80%</strong>
+                        </li>
+                    </ul>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🚀</div>
-                    <h3>Backend</h3>
-                    <p>NodeJS, Express, JWT, REST API</p>
+                <div class="skill-category glass">
+                    <div class="skill-header">
+                        <span>🛠</span>
+                        <div>
+                            <h3>Backend & API</h3>
+                            <p>NodeJS, Express, JWT, REST API</p>
+                        </div>
+                    </div>
+                    <ul class="skill-bars">
+                        <li>
+                            <span>NodeJS</span>
+                            <div class="bar"><span style="width: 85%"></span></div>
+                            <strong>85%</strong>
+                        </li>
+                        <li>
+                            <span>Express</span>
+                            <div class="bar"><span style="width: 80%"></span></div>
+                            <strong>80%</strong>
+                        </li>
+                        <li>
+                            <span>JWT / REST API</span>
+                            <div class="bar"><span style="width: 85%"></span></div>
+                            <strong>85%</strong>
+                        </li>
+                    </ul>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">💾</div>
-                    <h3>Database</h3>
-                    <p>MongoDB, Firebase</p>
+                <div class="skill-category glass">
+                    <div class="skill-header">
+                        <span>🗄</span>
+                        <div>
+                            <h3>Cơ Sở Dữ Liệu</h3>
+                            <p>MongoDB, Firebase</p>
+                        </div>
+                    </div>
+                    <ul class="skill-bars">
+                        <li>
+                            <span>MongoDB</span>
+                            <div class="bar"><span style="width: 80%"></span></div>
+                            <strong>80%</strong>
+                        </li>
+                        <li>
+                            <span>Firebase</span>
+                            <div class="bar"><span style="width: 75%"></span></div>
+                            <strong>75%</strong>
+                        </li>
+                    </ul>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🛠️</div>
-                    <h3>Tools</h3>
-                    <p>Git, GitLab, VSCode, Postman, Docker</p>
+                <div class="skill-category glass">
+                    <div class="skill-header">
+                        <span>⚙️</span>
+                        <div>
+                            <h3>Công Cụ</h3>
+                            <p>Git, GitLab, VSCode, Postman, Docker</p>
+                        </div>
+                    </div>
+                    <ul class="skill-tags">
+                        <li>Git & GitLab</li>
+                        <li>VSCode</li>
+                        <li>Postman</li>
+                        <li>Docker</li>
+                        <li>CI/CD cơ bản</li>
+                    </ul>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🎨</div>
-                    <h3>UI/UX</h3>
-                    <p>Figma, UML, Design cơ bản</p>
+                <div class="skill-category glass">
+                    <div class="skill-header">
+                        <span>🎨</span>
+                        <div>
+                            <h3>UI/UX & Khác</h3>
+                            <p>UI/UX cơ bản, UML, Figma</p>
+                        </div>
+                    </div>
+                    <ul class="skill-tags">
+                        <li>UI/UX Thinking</li>
+                        <li>Figma</li>
+                        <li>UML</li>
+                        <li>Design System</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -122,72 +268,79 @@
     <!-- Projects Section -->
     <section class="projects" id="projects">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <div class="section-heading">
+                <p class="section-label">Projects</p>
+                <h2>Dự Án <span>Của Tôi</span></h2>
+                <p class="section-subtitle">
+                    Trưng bày các công việc của tôi trong phát triển ứng dụng web, mobile và desktop.
+                </p>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active">Tất Cả Dự Án</button>
+                <button class="filter-btn">Ứng Dụng Mobile</button>
+                <button class="filter-btn">Ứng Dụng Desktop</button>
+            </div>
             <div class="projects-grid">
-                <!-- Project 1: Foodie App -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/600x400/2A63A5/FFFFFF?text=Foodie+App" alt="Foodie App">
-                    </div>
+                <article class="project-card glass">
+                    <div class="project-cover foodie"></div>
                     <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-type">Mobile</span>
+                            <span class="project-role">Fullstack Developer</span>
+                        </div>
                         <h3>Foodie App</h3>
                         <p class="project-description">
-                            Ứng dụng chia sẻ món ăn với đầy đủ tính năng đăng bài, duyệt bài, phân quyền người dùng 
-                            (User, Creator, Admin) và upload ảnh. Hệ thống bao gồm ứng dụng mobile và web admin.
+                            Ứng dụng chia sẻ món ăn với tính năng đăng bài, duyệt bài, phân quyền User/Creator/Admin và upload ảnh.
+                            Hệ thống gồm mobile app và web admin.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">ReactJS</span>
-                            <span class="tech-tag">NodeJS</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">JWT</span>
+                            <span>React Native</span>
+                            <span>ReactJS</span>
+                            <span>NodeJS</span>
+                            <span>MongoDB</span>
+                            <span>JWT</span>
                         </div>
-                        <p class="project-role"><strong>Vai trò:</strong> Fullstack Developer</p>
-                        <a href="#" class="btn-secondary">Xem chi tiết</a>
+                        <a href="#" class="btn btn-secondary">Xem chi tiết</a>
                     </div>
-                </div>
-
-                <!-- Project 2: SFTP-Lite -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/600x400/2A63A5/FFFFFF?text=SFTP-Lite" alt="SFTP-Lite">
-                    </div>
+                </article>
+                <article class="project-card glass">
+                    <div class="project-cover sftp"></div>
                     <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-type">Desktop</span>
+                            <span class="project-role">Java Developer</span>
+                        </div>
                         <h3>SFTP-Lite</h3>
                         <p class="project-description">
-                            Ứng dụng Java Swing để truyền file an toàn qua mạng với mã hóa TLS/SSL. 
-                            Hỗ trợ kiểm tra checksum để đảm bảo tính toàn vẹn dữ liệu.
+                            Ứng dụng Java Swing truyền file an toàn với TLS/SSL, hỗ trợ kiểm tra checksum và mã hóa RSA/AES.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">TLS/SSL</span>
-                            <span class="tech-tag">RSA/AES</span>
+                            <span>Java</span>
+                            <span>TLS/SSL</span>
+                            <span>RSA/AES</span>
                         </div>
-                        <p class="project-role"><strong>Vai trò:</strong> Java Developer</p>
-                        <a href="#" class="btn-secondary">Xem chi tiết</a>
+                        <a href="#" class="btn btn-secondary">Xem chi tiết</a>
                     </div>
-                </div>
-
-                <!-- Project 3: HotelManager -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/600x400/2A63A5/FFFFFF?text=HotelManager" alt="HotelManager">
-                    </div>
+                </article>
+                <article class="project-card glass">
+                    <div class="project-cover hotel"></div>
                     <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-type">Mobile</span>
+                            <span class="project-role">Mobile Developer</span>
+                        </div>
                         <h3>HotelManager</h3>
                         <p class="project-description">
-                            Ứng dụng Android quản lý khách sạn với các tính năng đặt phòng, check-in/check-out 
-                            và theo dõi doanh thu. Sử dụng Firebase làm backend và Material Design cho giao diện.
+                            Ứng dụng Android quản lý khách sạn: đặt phòng, check-in/out, theo dõi doanh thu. Sử dụng Firebase và Material Design.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">Android</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Material Design</span>
+                            <span>Android</span>
+                            <span>Firebase</span>
+                            <span>Material Design</span>
                         </div>
-                        <p class="project-role"><strong>Vai trò:</strong> Mobile Developer</p>
-                        <a href="#" class="btn-secondary">Xem chi tiết</a>
+                        <a href="#" class="btn btn-secondary">Xem chi tiết</a>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
@@ -195,62 +348,68 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
+            <div class="section-heading">
+                <p class="section-label">Contact</p>
+                <h2>Liên Hệ <span>Với Tôi</span></h2>
+                <p class="section-subtitle">
+                    Có câu hỏi hoặc muốn làm việc cùng nhau? Tôi rất mong được nghe từ bạn!
+                </p>
+            </div>
             <div class="contact-wrapper">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">👤</div>
+                <div class="contact-card glass">
+                    <div class="contact-profile">
+                        <div class="contact-avatar">
+                            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=300&q=80" alt="Contact" />
+                        </div>
                         <div>
-                            <h3>Tên</h3>
-                            <p>Your Name</p>
+                            <h3>Sinh Viên HUTECH</h3>
+                            <p>Kỹ Thuật Phần Mềm</p>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <div>
-                            <h3>Email</h3>
-                            <p>your.email@example.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📱</div>
-                        <div>
-                            <h3>Số điện thoại</h3>
-                            <p>+84 XXX XXX XXX</p>
-                        </div>
-                    </div>
+                    <ul class="contact-info">
+                        <li>
+                            <span>Email</span>
+                            <strong>your.email@example.com</strong>
+                        </li>
+                        <li>
+                            <span>Số điện thoại</span>
+                            <strong>+84 XXX XXX XXX</strong>
+                        </li>
+                        <li>
+                            <span>Địa chỉ</span>
+                            <strong>TP. Hồ Chí Minh</strong>
+                        </li>
+                    </ul>
                     <div class="social-links">
-                        <a href="#" class="social-link" aria-label="GitHub">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link" aria-label="GitLab">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0L8.5 8.5H15.5L12 0ZM12 0L15.5 8.5H22.5L19 0H12ZM8.5 8.5L5.5 16.5H18.5L15.5 8.5H8.5ZM5.5 16.5L2.5 24H9.5L12.5 16.5H5.5ZM18.5 16.5L15.5 24H22.5L25.5 16.5H18.5Z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">GH</a>
+                        <a href="#" class="social-link" aria-label="GitLab">GL</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Tên của bạn" required>
+                <form class="contact-form glass" id="contactForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Họ và Tên *</label>
+                            <input type="text" id="name" name="name" placeholder="Nguyễn Văn A" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+84 09xx xxx xxx">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Chủ đề *</label>
+                            <input type="text" id="subject" name="subject" placeholder="Yêu cầu dự án" required>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Email của bạn" required>
+                        <label for="message">Tin nhắn *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Hãy cho tôi biết về dự án hoặc yêu cầu của bạn..." required></textarea>
                     </div>
-                    <div class="form-group">
-                        <input type="tel" id="phone" name="phone" placeholder="Số điện thoại">
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="5" placeholder="Tin nhắn của bạn" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary">Gửi Tin Nhắn</button>
+                    <button type="submit" class="btn btn-primary">Gửi Tin Nhắn</button>
                 </form>
             </div>
         </div>
@@ -259,11 +418,12 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Portfolio. Designed by <strong>Your Name</strong></p>
+            <p>&copy; 2025. Designed by <strong>Your Name</strong>. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+
 
