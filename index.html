@@ -26,10 +26,6 @@
                         <li><a href="#projects" class="nav-link">Projects</a></li>
                         <li><a href="#contact" class="nav-link">Contact</a></li>
                     </ul>
-                    <a href="#" class="btn btn-glass" id="downloadCV">
-                        <span class="btn-icon">⇩</span>
-                        Download CV
-                    </a>
                     <div class="hamburger" id="hamburger">
                         <span></span>
                         <span></span>
@@ -82,11 +78,36 @@
             <div class="hero-right">
                 <div class="hero-orbit">
                     <div class="hero-circle">
-                        <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=600&q=80" alt="Avatar" />
+                        <div class="avatar-icon hero-icon">💻</div>
                     </div>
-                    <div class="hero-floating react">⚛</div>
-                    <div class="hero-floating backend">🧠</div>
-                    <div class="hero-floating database">🗄</div>
+                    <div class="hero-floating react" aria-label="Frontend">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <g fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="1.2" fill="#fff" stroke="none" />
+                                <ellipse cx="12" cy="12" rx="6.6" ry="2.8" transform="rotate(25 12 12)" />
+                                <ellipse cx="12" cy="12" rx="6.6" ry="2.8" transform="rotate(-25 12 12)" />
+                                <ellipse cx="12" cy="12" rx="6.6" ry="2.8" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="hero-floating backend" aria-label="Backend">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <g fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="4" y="4" width="16" height="6" rx="1.2" />
+                                <rect x="4" y="10" width="16" height="6" rx="1.2" />
+                                <rect x="4" y="16" width="16" height="3" rx="1" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="hero-floating database" aria-label="Database">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <g fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                                <ellipse cx="12" cy="6" rx="6" ry="2" />
+                                <path d="M6 6v6c0 1.1 2.7 2 6 2s6-.9 6-2V6" />
+                                <path d="M6 12v4c0 1.1 2.7 2 6 2s6-.9 6-2v-4" />
+                            </g>
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>
@@ -105,7 +126,7 @@
             <div class="about-grid">
                 <div class="profile-card glass">
                     <div class="profile-avatar">
-                        <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80" alt="Profile" />
+                        <div class="avatar-icon">💻</div>
                     </div>
                     <h3>Sinh Viên HUTECH</h3>
                     <p class="profile-role">Kỹ Thuật Phần Mềm</p>
@@ -282,7 +303,15 @@
             </div>
             <div class="projects-grid">
                 <article class="project-card glass">
-                    <div class="project-cover foodie"></div>
+                    <div class="project-cover foodie">
+                        <div class="project-icon" aria-hidden="true">
+                            <!-- Mobile / App icon -->
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="7" y="3" width="10" height="18" rx="2" fill="none" stroke="#fff" stroke-width="1.6" />
+                                <circle cx="12" cy="18.5" r="0.6" fill="#fff" />
+                            </svg>
+                        </div>
+                    </div>
                     <div class="project-content">
                         <div class="project-meta">
                             <span class="project-type">Mobile</span>
@@ -304,7 +333,15 @@
                     </div>
                 </article>
                 <article class="project-card glass">
-                    <div class="project-cover sftp"></div>
+                    <div class="project-cover sftp">
+                        <div class="project-icon" aria-hidden="true">
+                            <!-- Desktop / Server icon -->
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="3" y="4" width="18" height="12" rx="2" fill="none" stroke="#fff" stroke-width="1.6" />
+                                <rect x="7" y="16" width="10" height="2" rx="1" fill="#fff" />
+                            </svg>
+                        </div>
+                    </div>
                     <div class="project-content">
                         <div class="project-meta">
                             <span class="project-type">Desktop</span>
@@ -323,7 +360,15 @@
                     </div>
                 </article>
                 <article class="project-card glass">
-                    <div class="project-cover hotel"></div>
+                    <div class="project-cover hotel">
+                        <div class="project-icon" aria-hidden="true">
+                            <!-- Hotel / Booking icon -->
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M4 21v-9a2 2 0 0 1 2-2h12v11" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                <rect x="8" y="7" width="3" height="3" rx="0.4" fill="#fff" />
+                            </svg>
+                        </div>
+                    </div>
                     <div class="project-content">
                         <div class="project-meta">
                             <span class="project-type">Mobile</span>
@@ -359,7 +404,7 @@
                 <div class="contact-card glass">
                     <div class="contact-profile">
                         <div class="contact-avatar">
-                            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=300&q=80" alt="Contact" />
+                            <div class="avatar-icon">💻</div>
                         </div>
                         <div>
                             <h3>Sinh Viên HUTECH</h3>
@@ -418,7 +463,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025. Designed by <strong>Your Name</strong>. All rights reserved.</p>
+            <p>&copy; 2025. Designed by <strong>Lam</strong>. All rights reserved.</p>
         </div>
     </footer>
 

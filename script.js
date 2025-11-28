@@ -156,12 +156,7 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Download CV Button (placeholder)
-const downloadCV = document.getElementById('downloadCV');
-downloadCV.addEventListener('click', (e) => {
-    e.preventDefault();
-    alert('Chức năng Download CV sẽ được cập nhật sau. Bạn có thể thay đổi link trong file HTML.');
-});
+
 
 // Project Detail Buttons (placeholder)
 document.querySelectorAll('.btn-secondary').forEach(btn => {
