@@ -85,7 +85,7 @@ const contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    
+
     // Get form values
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
@@ -127,7 +127,7 @@ const navLinks = document.querySelectorAll('.nav-link');
 
 window.addEventListener('scroll', () => {
     let current = '';
-    
+
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
@@ -158,13 +158,52 @@ document.head.appendChild(style);
 
 
 
-// Project Detail Buttons (placeholder)
-document.querySelectorAll('.btn-secondary').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        const projectName = btn.closest('.project-card').querySelector('h3').textContent;
-        alert(`Chi tiết dự án "${projectName}" sẽ được cập nhật sau.`);
+// Repo Modal
+const repoModal = document.getElementById('repoModal');
+const modalTitle = document.getElementById('modalTitle');
+const repoLinkInput = document.getElementById('repoLinkInput');
+const copyBtn = document.getElementById('copyBtn');
+const copyHint = document.getElementById('copyHint');
+const modalClose = document.getElementById('modalClose');
+
+function showRepoModal(projectName, repoUrl) {
+    modalTitle.textContent = projectName + ' – Repository';
+    repoLinkInput.value = repoUrl;
+    copyBtn.classList.remove('copied');
+    copyBtn.querySelector('span').textContent = 'Copy';
+    copyHint.textContent = '';
+    repoModal.classList.add('active');
+}
+
+function closeRepoModal() {
+    repoModal.classList.remove('active');
+}
+
+function copyRepoLink() {
+    repoLinkInput.select();
+    navigator.clipboard.writeText(repoLinkInput.value).then(() => {
+        copyBtn.classList.add('copied');
+        copyBtn.querySelector('span').textContent = 'Copied!';
+        copyHint.textContent = '✅ Đã copy link! Dán vào trình duyệt để truy cập.';
+        setTimeout(() => {
+            copyBtn.classList.remove('copied');
+            copyBtn.querySelector('span').textContent = 'Copy';
+        }, 3000);
+    }).catch(() => {
+        // Fallback for older browsers
+        document.execCommand('copy');
+        copyBtn.classList.add('copied');
+        copyBtn.querySelector('span').textContent = 'Copied!';
+        copyHint.textContent = '✅ Đã copy link! Dán vào trình duyệt để truy cập.';
     });
+}
+
+modalClose.addEventListener('click', closeRepoModal);
+repoModal.addEventListener('click', (e) => {
+    if (e.target === repoModal) closeRepoModal();
+});
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeRepoModal();
 });
 
 // Social Links (placeholder)
@@ -190,7 +229,7 @@ window.addEventListener('scroll', () => {
 function typeWriter(element, text, speed = 100) {
     let i = 0;
     element.textContent = '';
-    
+
     function type() {
         if (i < text.length) {
             element.textContent += text.charAt(i);
@@ -198,7 +237,7 @@ function typeWriter(element, text, speed = 100) {
             setTimeout(type, speed);
         }
     }
-    
+
     type();
 }
 
