@@ -261,3 +261,92 @@ window.addEventListener('load', () => {
 console.log('%c👋 Welcome to my Portfolio!', 'color: #2A63A5; font-size: 20px; font-weight: bold;');
 console.log('%cFeel free to explore the code!', 'color: #666; font-size: 14px;');
 
+// ---------- AI / Modern Digital Effects ----------
+
+// Custom Glow Cursor
+const cursorDot = document.getElementById('cursor-dot');
+const cursorOutline = document.getElementById('cursor-outline');
+
+if (cursorDot && cursorOutline) {
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    let outlineX = mouseX;
+    let outlineY = mouseY;
+    
+    // Track mouse position
+    window.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        
+        // Dot follows instantly
+        cursorDot.style.top = `${mouseY}px`;
+        cursorDot.style.left = `${mouseX}px`;
+    });
+
+    // Outline follows with lerp (delay)
+    function animateCursor() {
+        // Lerp for outline
+        let easing = 0.15;
+        outlineX += (mouseX - outlineX) * easing;
+        outlineY += (mouseY - outlineY) * easing;
+
+        cursorOutline.style.top = `${outlineY}px`;
+        cursorOutline.style.left = `${outlineX}px`;
+
+        requestAnimationFrame(animateCursor);
+    }
+    animateCursor();
+
+    // Hover state on interactive elements
+    const interactives = document.querySelectorAll('a, button, input, textarea, .nav-link, .btn, .social-link, details, [data-magnetic]');
+    interactives.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            cursorDot.classList.add('hovered');
+            cursorOutline.classList.add('hovered');
+        });
+        el.addEventListener('mouseleave', () => {
+            cursorDot.classList.remove('hovered');
+            cursorOutline.classList.remove('hovered');
+        });
+    });
+}
+
+// Magnetic Button Effect
+const magnetics = document.querySelectorAll('[data-magnetic]');
+magnetics.forEach(btn => {
+    btn.addEventListener('mousemove', function(e) {
+        const position = btn.getBoundingClientRect();
+        const x = e.clientX - position.left - position.width / 2;
+        const y = e.clientY - position.top - position.height / 2;
+        
+        btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+    });
+    
+    btn.addEventListener('mouseleave', function() {
+        btn.style.transform = 'translate(0px, 0px)';
+    });
+});
+
+// 3D Tilt Effect for Cards
+const tiltCards = document.querySelectorAll('.tilt-card');
+tiltCards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left; // x position within the element.
+        const y = e.clientY - rect.top;  // y position within the element.
+        
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        const rotateX = ((y - centerY) / centerY) * -10; // Max 10 deg
+        const rotateY = ((x - centerX) / centerX) * 10;
+        
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+        card.style.transition = 'none';
+    });
+    
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+        card.style.transition = 'transform 0.5s ease';
+    });
+});

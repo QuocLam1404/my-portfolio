@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Software Engineer</title>
+    <title>Dương Quốc Lâm – Software & AI Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Duong Quoc Lam – Software & AI Engineer. Python AI Microservices, Vector Search (OpenAI CLIP), Multimodal LLM (Gemini), AWS Cloud Infrastructure.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,17 +19,17 @@
             <div class="container">
                 <div class="nav-wrapper">
                     <div class="logo">
-                        <span class="logo-badge">P</span>
-                        <a href="#home">Portfolio</a>
+                        <span class="logo-badge" data-magnetic>DL</span>
+                        <a href="#home">Quốc Lâm</a>
                     </div>
                     <ul class="nav-menu" id="navMenu">
-                        <li><a href="#home" class="nav-link">Home</a></li>
-                        <li><a href="#about" class="nav-link">About</a></li>
-                        <li><a href="#skills" class="nav-link">Skills</a></li>
-                        <li><a href="#projects" class="nav-link">Projects</a></li>
-                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        <li><a href="#home" class="nav-link" data-magnetic>Home</a></li>
+                        <li><a href="#about" class="nav-link" data-magnetic>About</a></li>
+                        <li><a href="#skills" class="nav-link" data-magnetic>Skills</a></li>
+                        <li><a href="#projects" class="nav-link" data-magnetic>Projects</a></li>
+                        <li><a href="#contact" class="nav-link" data-magnetic>Contact</a></li>
                     </ul>
-                    <div class="hamburger" id="hamburger">
+                    <div class="hamburger" id="hamburger" data-magnetic>
                         <span></span>
                         <span></span>
                         <span></span>
@@ -43,35 +44,38 @@
         <div class="container hero-container">
             <div class="hero-left">
                 <div class="hero-badge">
-                    <span>🔥</span>
-                    Welcome to my portfolio
+                    <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    Software & AI Microservices Engineer
                 </div>
                 <h1>
                     Hi, I'm a
-                    <span class="gradient-text">Software Engineer</span>
+                    <span class="gradient-text">Software & AI Engineer</span>
                 </h1>
                 <p>
-                    Software Engineering Student – HUTECH. Passionate about building beautiful web & mobile
-                    applications with modern technologies.
+                    Software Engineering Student specializing in Python AI Microservices, Vector Search Systems (OpenAI CLIP), Multimodal LLM Applications (Gemini), and AWS Cloud Infrastructure.
                 </p>
                 <div class="hero-actions">
-                    <a href="#projects" class="btn btn-primary">
+                    <a href="#projects" class="btn btn-primary" data-magnetic>
                         View Projects
                     </a>
-                    <a href="#contact" class="btn btn-ghost">
+                    <a href="CV_DuongQuocLam.pdf" download class="btn btn-glass" data-magnetic>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        Download CV
+                    </a>
+                    <a href="#contact" class="btn btn-ghost" data-magnetic>
                         Contact Me
                     </a>
                 </div>
                 <div class="hero-stats">
-                    <div class="stat-card">
-                        <span class="stat-value">2+</span>
-                        <span class="stat-label">Projects</span>
+                    <div class="stat-card tilt-card">
+                        <span class="stat-value">3+</span>
+                        <span class="stat-label">AI & Cloud Projects</span>
                     </div>
-                    <div class="stat-card">
-                        <span class="stat-value">10+</span>
+                    <div class="stat-card tilt-card">
+                        <span class="stat-value">12+</span>
                         <span class="stat-label">Technologies</span>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card tilt-card">
                         <span class="stat-value">4th</span>
                         <span class="stat-label">Year Student</span>
                     </div>
@@ -79,13 +83,18 @@
             </div>
             <div class="hero-right">
                 <div class="hero-orbit">
-                    <div class="hero-circle">
-                        <div class="avatar-icon hero-icon">💻</div>
+                    <div class="hero-circle tilt-card">
+                        <img src="avatar.jpg" alt="Dương Quốc Lâm" class="avatar-image hero-icon">
+                    </div>
+                    <div class="hero-floating python" aria-label="Python AI">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M12 2c-3.5 0-4.5 1.5-4.5 3.5v2h5v1h-7C3.5 8.5 2 9.8 2 12.5c0 3.2 2 4.5 5 4.5h1.5v-2.2c0-2 1.3-3.8 3.5-3.8h5c1.8 0 3-1.2 3-3V5.5C20 3.5 18.5 2 12 2zm-2 3c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1z" fill="#FFE873"/>
+                            <path d="M12 22c3.5 0 4.5-1.5 4.5-3.5v-2h-5v-1h7c2 0 3.5-1.3 3.5-4 0-3.2-2-4.5-5-4.5H18.5v2.2c0 2-1.3 3.8-3.5 3.8h-5c-1.8 0-3 1.2-3 3v3c0 2 1.5 3.5 8 3.5zm2-3c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1z" fill="#306998"/>
+                        </svg>
                     </div>
                     <div class="hero-floating react" aria-label="Frontend">
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <g fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round"
-                                stroke-linejoin="round">
+                            <g fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
                                 <circle cx="12" cy="12" r="1.2" fill="#fff" stroke="none" />
                                 <ellipse cx="12" cy="12" rx="6.6" ry="2.8" transform="rotate(25 12 12)" />
                                 <ellipse cx="12" cy="12" rx="6.6" ry="2.8" transform="rotate(-25 12 12)" />
@@ -95,8 +104,7 @@
                     </div>
                     <div class="hero-floating backend" aria-label="Backend">
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <g fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"
-                                stroke-linejoin="round">
+                            <g fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="4" y="4" width="16" height="6" rx="1.2" />
                                 <rect x="4" y="10" width="16" height="6" rx="1.2" />
                                 <rect x="4" y="16" width="16" height="3" rx="1" />
@@ -105,8 +113,7 @@
                     </div>
                     <div class="hero-floating database" aria-label="Database">
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <g fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"
-                                stroke-linejoin="round">
+                            <g fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
                                 <ellipse cx="12" cy="6" rx="6" ry="2" />
                                 <path d="M6 6v6c0 1.1 2.7 2 6 2s6-.9 6-2V6" />
                                 <path d="M6 12v4c0 1.1 2.7 2 6 2s6-.9 6-2v-4" />
@@ -125,52 +132,41 @@
                 <p class="section-label">About</p>
                 <h2>Về <span>Tôi</span></h2>
                 <p class="section-subtitle">
-                    Tìm hiểu thêm về hành trình học vấn và niềm đam mê phát triển phần mềm của tôi.
+                    Tìm hiểu thêm về hành trình học vấn và định hướng chuyên sâu AI & Backend Engineer của tôi.
                 </p>
             </div>
             <div class="about-grid">
-                <div class="profile-card glass">
+                <div class="profile-card glass tilt-card">
                     <div class="profile-avatar">
-                        <div class="avatar-icon">💻</div>
+                        <img src="avatar.jpg" alt="Dương Quốc Lâm" class="avatar-image">
                     </div>
-                    <h3>Sinh Viên HUTECH</h3>
-                    <p class="profile-role">Kỹ Thuật Phần Mềm</p>
-                    <p class="profile-school">Đại học Công nghệ TP.HCM</p>
+                    <h3>Dương Quốc Lâm</h3>
+                    <p class="profile-role">Software & AI Engineer</p>
+                    <p class="profile-school">Đại học Công nghệ TP.HCM (HUTECH)</p>
                     <ul class="profile-info">
                         <li><span>Địa điểm</span><strong>TP.HCM, Việt Nam</strong></li>
                         <li><span>Năm học</span><strong>Sinh viên năm 4</strong></li>
-                        <li><span>Mục tiêu</span><strong>Thực tập tại FPT Software</strong></li>
+                        <li><span>Định hướng</span><strong>Software & AI Engineer</strong></li>
                         <li><span>Tốt nghiệp</span><strong>Dự kiến 2025</strong></li>
                     </ul>
                 </div>
                 <div class="about-details">
-                    <article class="about-card glass">
+                    <article class="about-card glass tilt-card">
                         <h3>Giới Thiệu</h3>
                         <p>
-                            Tôi là sinh viên năm 4 ngành <strong>Kỹ thuật phần mềm</strong> tại HUTECH. Với niềm đam mê
-                            công nghệ
-                            và phát triển sản phẩm thực tế, tôi đang tìm kiếm cơ hội thực tập tại <strong>FPT
-                                Software</strong>
-                            để nâng cao kỹ năng và đóng góp giá trị thật sự.
+                            Tôi là sinh viên năm 4 ngành <strong>Kỹ thuật phần mềm</strong> tại HUTECH, định hướng chuyên sâu <strong>Software & AI Engineer</strong>. Đam mê xây dựng các hệ thống AI Microservices, Vector Search Systems, ứng dụng Multimodal LLM (Gemini, CLIP) và hạ tầng AWS Cloud Infrastructure.
                         </p>
                     </article>
-                    <article class="about-card glass">
+                    <article class="about-card glass tilt-card">
                         <h3>Kinh Nghiệm Đồ Án</h3>
                         <p>
-                            Tôi đã thực hiện nhiều đồ án lớn với vai trò Fullstack, bao gồm phát triển ứng dụng Web,
-                            Mobile
-                            và Backend. Thành thạo ReactJS, React Native, NodeJS, MongoDB và Firebase, tôi có khả năng
-                            xây dựng
-                            giải pháp end-to-end.
+                            Lập trình và làm chủ quy trình phát triển sản phẩm AI & Fullstack end-to-end: từ huấn luyện & tích hợp mô hình AI (OpenAI CLIP, PyTorch, Gemini Vision API), thiết kế Vector Search Engine (512-dim embeddings), đến triển khai ứng dụng production trên hạ tầng <strong>AWS Cloud</strong> (CloudFront, S3, Route 53).
                         </p>
                     </article>
-                    <article class="about-card glass">
-                        <h3>Tư Duy & Định Hướng</h3>
+                    <article class="about-card glass tilt-card">
+                        <h3>Tư Duy & Mục Tiêu</h3>
                         <p>
-                            Với tư duy logic tốt và niềm yêu thích UI/UX, tôi tập trung vào việc tạo ra trải nghiệm
-                            người dùng
-                            hiện đại, tối giản và giàu tính ứng dụng. Tôi luôn sẵn sàng học hỏi để bắt kịp xu hướng công
-                            nghệ 2025.
+                            Tập trung tối ưu hiệu năng hệ thống backend, xử lý dữ liệu lớn real-time và xây dựng các giải pháp AI thông minh mang lại giá trị thực tế cao cho sản phẩm.
                         </p>
                     </article>
                 </div>
@@ -185,73 +181,118 @@
                 <p class="section-label">Skills</p>
                 <h2>Kỹ Năng <span>Chuyên Môn</span></h2>
                 <p class="section-subtitle">
-                    Tổng hợp các công nghệ tôi sử dụng hàng ngày cho Web, Mobile và Backend.
+                    Tổng hợp các công nghệ tôi sử dụng cho AI Microservices, Cloud Infrastructure, Database và Fullstack Web/Mobile.
                 </p>
             </div>
             <div class="skills-grid">
-                <div class="skill-category glass">
+                <!-- AI & Machine Learning Category (Top #1) -->
+                <div class="skill-category glass featured-skill tilt-card">
                     <div class="skill-header">
-                        <span>🧩</span>
+                        <span class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="3"/><line x1="12" y1="8" x2="12" y2="11"/><circle cx="8" cy="16" r="1"/><circle cx="16" cy="16" r="1"/></svg>
+                        </span>
                         <div>
-                            <h3>Phát Triển Frontend</h3>
-                            <p>ReactJS, React Native, TailwindCSS</p>
+                            <h3>AI / Machine Learning & Python</h3>
+                            <p>Python, PyTorch, CLIP, FastAPI, Gemini API</p>
                         </div>
                     </div>
                     <ul class="skill-bars">
                         <li>
-                            <span>ReactJS</span>
+                            <span>Python & AI Microservices</span>
+                            <div class="bar"><span style="width: 95%"></span></div>
+                            <strong>95%</strong>
+                        </li>
+                        <li>
+                            <span>PyTorch & OpenAI CLIP</span>
                             <div class="bar"><span style="width: 90%"></span></div>
                             <strong>90%</strong>
                         </li>
                         <li>
-                            <span>React Native</span>
+                            <span>FastAPI & RESTful AI APIs</span>
+                            <div class="bar"><span style="width: 90%"></span></div>
+                            <strong>90%</strong>
+                        </li>
+                        <li>
+                            <span>Google Gemini Vision API & Multimodal LLM</span>
                             <div class="bar"><span style="width: 85%"></span></div>
                             <strong>85%</strong>
                         </li>
                         <li>
-                            <span>TailwindCSS</span>
-                            <div class="bar"><span style="width: 80%"></span></div>
-                            <strong>80%</strong>
+                            <span>Vector Search & Embeddings</span>
+                            <div class="bar"><span style="width: 85%"></span></div>
+                            <strong>85%</strong>
                         </li>
                     </ul>
+                    <ul class="skill-tags mt-16">
+                        <li data-magnetic>Python</li>
+                        <li data-magnetic>PyTorch</li>
+                        <li data-magnetic>FastAPI</li>
+                        <li data-magnetic>OpenAI CLIP</li>
+                        <li data-magnetic>Hugging Face</li>
+                        <li data-magnetic>Google Gemini API</li>
+                        <li data-magnetic>Vector Search</li>
+                    </ul>
                 </div>
-                <div class="skill-category glass">
+
+                <!-- Cloud & Backend Category -->
+                <div class="skill-category glass tilt-card">
                     <div class="skill-header">
-                        <span>🛠</span>
+                        <span class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                        </span>
                         <div>
-                            <h3>Backend & API</h3>
-                            <p>NodeJS, Express, JWT, REST API</p>
+                            <h3>Cloud & Backend Infrastructure</h3>
+                            <p>AWS Cloud, Node.js, Express, Socket.io</p>
                         </div>
                     </div>
                     <ul class="skill-bars">
                         <li>
-                            <span>NodeJS</span>
+                            <span>AWS Cloud (CloudFront, S3, Route 53)</span>
                             <div class="bar"><span style="width: 85%"></span></div>
                             <strong>85%</strong>
                         </li>
                         <li>
-                            <span>Express</span>
+                            <span>Node.js & Express</span>
+                            <div class="bar"><span style="width: 85%"></span></div>
+                            <strong>85%</strong>
+                        </li>
+                        <li>
+                            <span>Socket.io Real-time Pipeline</span>
                             <div class="bar"><span style="width: 80%"></span></div>
                             <strong>80%</strong>
                         </li>
-                        <li>
-                            <span>JWT / REST API</span>
-                            <div class="bar"><span style="width: 85%"></span></div>
-                            <strong>85%</strong>
-                        </li>
+                    </ul>
+                    <ul class="skill-tags mt-16">
+                        <li data-magnetic>AWS</li>
+                        <li data-magnetic>CloudFront</li>
+                        <li data-magnetic>Route 53</li>
+                        <li data-magnetic>S3</li>
+                        <li data-magnetic>NodeJS</li>
+                        <li data-magnetic>Express</li>
+                        <li data-magnetic>Socket.io</li>
+                        <li data-magnetic>JWT</li>
                     </ul>
                 </div>
-                <div class="skill-category glass">
+
+                <!-- Database Category -->
+                <div class="skill-category glass tilt-card">
                     <div class="skill-header">
-                        <span>🗄</span>
+                        <span class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                        </span>
                         <div>
-                            <h3>Cơ Sở Dữ Liệu</h3>
-                            <p>MongoDB, Firebase</p>
+                            <h3>Cơ Sở Dữ Liệu & Storage</h3>
+                            <p>MongoDB, Vector DB, Firebase, Cloudinary</p>
                         </div>
                     </div>
                     <ul class="skill-bars">
                         <li>
                             <span>MongoDB</span>
+                            <div class="bar"><span style="width: 85%"></span></div>
+                            <strong>85%</strong>
+                        </li>
+                        <li>
+                            <span>Vector Embeddings (512-dim)</span>
                             <div class="bar"><span style="width: 80%"></span></div>
                             <strong>80%</strong>
                         </li>
@@ -261,36 +302,53 @@
                             <strong>75%</strong>
                         </li>
                     </ul>
-                </div>
-                <div class="skill-category glass">
-                    <div class="skill-header">
-                        <span>⚙️</span>
-                        <div>
-                            <h3>Công Cụ</h3>
-                            <p>Git, GitLab, VSCode, Postman, Docker</p>
-                        </div>
-                    </div>
-                    <ul class="skill-tags">
-                        <li>Git & GitLab</li>
-                        <li>VSCode</li>
-                        <li>Postman</li>
-                        <li>Docker</li>
-                        <li>CI/CD cơ bản</li>
+                    <ul class="skill-tags mt-16">
+                        <li data-magnetic>MongoDB</li>
+                        <li data-magnetic>Vector Search</li>
+                        <li data-magnetic>Firebase</li>
+                        <li data-magnetic>Cloudinary</li>
                     </ul>
                 </div>
-                <div class="skill-category glass">
+
+                <!-- Web & Mobile Frontend Category -->
+                <div class="skill-category glass tilt-card">
                     <div class="skill-header">
-                        <span>🎨</span>
+                        <span class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </span>
                         <div>
-                            <h3>UI/UX & Khác</h3>
-                            <p>UI/UX cơ bản, UML, Figma</p>
+                            <h3>Web & Mobile Frontend</h3>
+                            <p>Next.js, TypeScript, ReactJS, Three.js, React Native</p>
                         </div>
                     </div>
                     <ul class="skill-tags">
-                        <li>UI/UX Thinking</li>
-                        <li>Figma</li>
-                        <li>UML</li>
-                        <li>Design System</li>
+                        <li data-magnetic>Next.js</li>
+                        <li data-magnetic>TypeScript</li>
+                        <li data-magnetic>ReactJS</li>
+                        <li data-magnetic>Three.js (3D)</li>
+                        <li data-magnetic>React Native</li>
+                        <li data-magnetic>TailwindCSS</li>
+                    </ul>
+                </div>
+
+                <!-- Tools & DevOps Category -->
+                <div class="skill-category glass tilt-card">
+                    <div class="skill-header">
+                        <span class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        </span>
+                        <div>
+                            <h3>Công Cụ & DevOps</h3>
+                            <p>Git, Docker, Postman, VSCode, AWS CLI</p>
+                        </div>
+                    </div>
+                    <ul class="skill-tags">
+                        <li data-magnetic>Git & GitHub</li>
+                        <li data-magnetic>Docker</li>
+                        <li data-magnetic>Postman</li>
+                        <li data-magnetic>VSCode</li>
+                        <li data-magnetic>AWS CLI</li>
+                        <li data-magnetic>CI/CD</li>
                     </ul>
                 </div>
             </div>
@@ -302,84 +360,179 @@
         <div class="container">
             <div class="section-heading">
                 <p class="section-label">Projects</p>
-                <h2>Dự Án <span>Của Tôi</span></h2>
+                <h2>Dự Án <span>Thực Chiến</span></h2>
                 <p class="section-subtitle">
-                    Trưng bày các công việc của tôi trong phát triển ứng dụng web, mobile và desktop.
+                    Các dự án nổi bật tích hợp AI Visual Search, Multimodal Gemini LLM và hạ tầng AWS Production.
                 </p>
             </div>
-            <div class="project-filters">
-                <button class="filter-btn active">Tất Cả Dự Án</button>
-                <button class="filter-btn">Ứng Dụng Mobile</button>
-            </div>
-            <div class="projects-grid">
-                <article class="project-card glass">
-                    <div class="project-cover foodie">
+            <div class="projects-grid bento">
+                <!-- Project 1: ZENITH (Featured — spans full width) -->
+                <article class="project-card glass featured tilt-card" id="project-zenith">
+                    <div class="project-cover zenith">
                         <div class="project-icon" aria-hidden="true">
-                            <!-- Mobile / App icon -->
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <rect x="7" y="3" width="10" height="18" rx="2" fill="none" stroke="#fff"
-                                    stroke-width="1.6" />
-                                <circle cx="12" cy="18.5" r="0.6" fill="#fff" />
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"/>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                <path d="M11 8v6M8 11h6"/>
                             </svg>
                         </div>
                     </div>
                     <div class="project-content">
                         <div class="project-meta">
-                            <span class="project-type">Mobile</span>
-                            <span class="project-role">Fullstack Developer</span>
+                            <span class="project-type">AI & 3D Web Engine</span>
+                            <span class="project-role">AI & Fullstack Lead</span>
                         </div>
-                        <h3>Foodie App</h3>
+                        <h3>ZENITH – 3D Fashion & AI Visual Search Engine</h3>
                         <p class="project-description">
-                            Ứng dụng chia sẻ món ăn với tính năng đăng bài, duyệt bài, phân quyền User/Creator/Admin và
-                            upload ảnh.
-                            Hệ thống gồm mobile app và web admin.
+                            Hệ thống tìm kiếm trang phục bằng hình ảnh real-time sử dụng <strong>512-dim vector embeddings</strong> (OpenAI CLIP & PyTorch), phân loại sản phẩm zero-shot, kết hợp công cụ phối đồ 3D bằng Three.js.
                         </p>
-                        <div class="project-tech">
-                            <span>React Native</span>
-                            <span>ReactJS</span>
-                            <span>NodeJS</span>
-                            <span>MongoDB</span>
-                            <span>JWT</span>
+                        <div class="case-study">
+                            <div class="case-item">
+                                <span class="case-label problem">PROBLEM</span>
+                                <p>Tìm kiếm trang phục bằng văn bản thông thường thiếu chính xác và không trực quan cho người dùng cuối.</p>
+                            </div>
+                            <div class="case-item">
+                                <span class="case-label solution">SOLUTION</span>
+                                <p>Xây dựng Visual Search Engine bằng OpenAI CLIP (512-dim embeddings), zero-shot apparel classification, kết hợp 3D clothing designer bằng Three.js + FastAPI microservices.</p>
+                            </div>
+                            <div class="case-item">
+                                <span class="case-label impact">IMPACT</span>
+                                <p>Tốc độ phản hồi tìm kiếm hình ảnh &lt; 200ms · Phân loại trang phục chính xác zero-shot · Giao diện 3D phối đồ tương tác mượt mà.</p>
+                            </div>
                         </div>
-                        <button class="btn btn-secondary"
-                            onclick="showRepoModal('Foodie App', 'https://github.com/quyluu2004/DACN.git')">Xem chi
-                            tiết</button>
+                        <details class="code-preview" data-cursor="pointer">
+                            <summary>
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                                Xem Code Snippet — CLIP Visual Search
+                            </summary>
+                            <pre><code># CLIP Visual Search – FastAPI Microservice
+@app.post("/api/search/visual")
+async def visual_search(file: UploadFile):
+    image = preprocess(Image.open(file.file)).unsqueeze(0)
+    with torch.no_grad():
+        embedding = clip_model.encode_image(image)
+    results = db.products.aggregate([{
+        "$vectorSearch": {
+            "queryVector": embedding[0].tolist(),
+            "path": "clip_embedding",
+            "numCandidates": 150, "limit": 12
+        }
+    }])
+    return {"results": list(results)}</code></pre>
+                        </details>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>PyTorch</span>
+                            <span>OpenAI CLIP</span>
+                            <span>Vector Search</span>
+                            <span>MongoDB</span>
+                            <span>Three.js</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-secondary" onclick="showRepoModal('ZENITH – AI Visual Search', 'https://github.com/QuocLam1404/Website_Design3D.git')" data-magnetic>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                GitHub Code
+                            </button>
+                        </div>
                     </div>
                 </article>
-                <article class="project-card glass">
-                    <div class="project-cover fashion">
+
+                <!-- Project 2: FOODIE -->
+                <article class="project-card glass tilt-card" id="project-foodie">
+                    <div class="project-cover foodie">
                         <div class="project-icon" aria-hidden="true">
-                            <!-- Fashion / Shopping icon -->
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <g fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M6 2L3 7v13a1 1 0 001 1h16a1 1 0 001-1V7l-3-5H6z" />
-                                    <path d="M3 7h18" />
-                                    <path d="M16 11a4 4 0 01-8 0" />
-                                </g>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                                <circle cx="12" cy="13" r="4"/>
                             </svg>
                         </div>
                     </div>
                     <div class="project-content">
                         <div class="project-meta">
-                            <span class="project-type">Mobile</span>
-                            <span class="project-role">Fullstack Developer</span>
+                            <span class="project-type">AI Recipe Ecosystem</span>
+                            <span class="project-role">AI & Mobile Developer</span>
                         </div>
-                        <h3>FashionApp</h3>
+                        <h3>FOODIE – AI Recipe & Social Ecosystem</h3>
                         <p class="project-description">
-                            Ứng dụng mua sắm thời trang với tính năng giỏ hàng, đặt hàng, thử đồ ảo (Try-On), social
-                            feed, đánh giá sản phẩm, mã giảm giá và quản lý admin. Hỗ trợ đăng nhập Google.
+                            Hệ thống nhận diện thực phẩm qua ảnh tủ lạnh với <strong>Google Gemini Vision API</strong>, gợi ý công thức thông minh, pipeline streaming video 300MB và ví ảo creator.
                         </p>
-                        <div class="project-tech">
-                            <span>Flutter</span>
-                            <span>Firebase</span>
-                            <span>Cloudinary</span>
-                            <span>Provider</span>
-                            <span>Google Auth</span>
+                        <div class="case-study">
+                            <div class="case-item">
+                                <span class="case-label problem">PROBLEM</span>
+                                <p>Người dùng khó xác định nguyên liệu có sẵn và thiếu gợi ý công thức phù hợp từ thực phẩm thực tế.</p>
+                            </div>
+                            <div class="case-item">
+                                <span class="case-label solution">SOLUTION</span>
+                                <p>Tích hợp Google Gemini Vision API nhận diện thực phẩm qua ảnh tủ lạnh, tự động gợi ý công thức, kết hợp pipeline streaming 300MB và ví ảo creator.</p>
+                            </div>
+                            <div class="case-item">
+                                <span class="case-label impact">IMPACT</span>
+                                <p>Nhận diện 50+ loại nguyên liệu · Pipeline video 300MB ổn định · Hệ thống ví ảo real-time cho creator.</p>
+                            </div>
                         </div>
-                        <button class="btn btn-secondary"
-                            onclick="showRepoModal('FashionApp', 'https://github.com/quyluu2004/DO_AN_DI_DONG.git')">Xem
-                            chi tiết</button>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Gemini Vision API</span>
+                            <span>Node.js</span>
+                            <span>Socket.io</span>
+                            <span>Cloudinary</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-secondary" onclick="showRepoModal('FOODIE – AI Recipe', 'https://github.com/QuocLam1404/FoodieApp.git')" data-magnetic>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                GitHub Code
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: LingoRise -->
+                <article class="project-card glass tilt-card" id="project-lingorise">
+                    <div class="project-cover lingorise">
+                        <div class="project-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-type">AWS Cloud Production</span>
+                            <span class="project-role">DevOps & Cloud Engineer</span>
+                        </div>
+                        <h3>LingoRise – IELTS & TOEIC Learning Platform</h3>
+                        <p class="project-description">
+                            Nền tảng luyện thi IELTS / TOEIC được <strong>deploy trên hạ tầng AWS Production</strong> (CloudFront CDN, S3, Route 53 DNS & SSL), tối ưu phản hồi toàn cầu.
+                        </p>
+                        <div class="case-study">
+                            <div class="case-item">
+                                <span class="case-label problem">PROBLEM</span>
+                                <p>Nền tảng học IELTS/TOEIC cần triển khai production với hiệu năng cao, bảo mật SSL và khả năng mở rộng.</p>
+                            </div>
+                            <div class="case-item">
+                                <span class="case-label solution">SOLUTION</span>
+                                <p>Deploy lên AWS với CloudFront CDN (cache static assets), S3 hosting, Route 53 DNS management và SSL Certificate tự động.</p>
+                            </div>
+                            <div class="case-item">
+                                <span class="case-label impact">IMPACT</span>
+                                <p>Website live tại lingorise.xyz · Thời gian phản hồi CDN toàn cầu &lt; 100ms · SSL A+ rating.</p>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span>AWS Cloud</span>
+                            <span>CloudFront</span>
+                            <span>Route 53</span>
+                            <span>S3</span>
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://lingorise.xyz" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" data-magnetic>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                Live Website (lingorise.xyz)
+                            </a>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -389,15 +542,15 @@
     <!-- Repo Link Modal -->
     <div class="modal-overlay" id="repoModal">
         <div class="modal-card glass">
-            <button class="modal-close" id="modalClose" aria-label="Đóng">&times;</button>
+            <button class="modal-close" id="modalClose" aria-label="Đóng" data-magnetic>&times;</button>
             <div class="modal-header">
-                <span class="modal-icon">🔗</span>
+                <svg class="modal-icon-svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
                 <h3 id="modalTitle">Repository Link</h3>
             </div>
             <p class="modal-desc">Copy link bên dưới để truy cập source code dự án:</p>
             <div class="modal-link-box">
                 <input type="text" id="repoLinkInput" readonly>
-                <button class="btn-copy" id="copyBtn" onclick="copyRepoLink()">
+                <button class="btn-copy" id="copyBtn" onclick="copyRepoLink()" data-magnetic>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" width="18" height="18">
                         <rect x="9" y="9" width="13" height="13" rx="2" />
@@ -421,14 +574,14 @@
                 </p>
             </div>
             <div class="contact-wrapper">
-                <div class="contact-card glass">
+                <div class="contact-card glass tilt-card">
                     <div class="contact-profile">
                         <div class="contact-avatar">
-                            <div class="avatar-icon">💻</div>
+                            <img src="avatar.jpg" alt="Dương Quốc Lâm" class="avatar-image contact-monogram">
                         </div>
                         <div>
-                            <h3>Sinh Viên HUTECH</h3>
-                            <p>Kỹ Thuật Phần Mềm</p>
+                            <h3>Dương Quốc Lâm</h3>
+                            <p>Software & AI Engineer</p>
                         </div>
                     </div>
                     <ul class="contact-info">
@@ -446,16 +599,22 @@
                         </li>
                     </ul>
                     <div class="social-links">
-                        <a href="#" class="social-link" aria-label="GitHub">GH</a>
-                        <a href="#" class="social-link" aria-label="GitLab">GL</a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                        <a href="https://github.com/QuocLam1404" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub" data-magnetic>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </a>
+                        <a href="mailto:quoclam1404@gmail.com" class="social-link" aria-label="Email" data-magnetic>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn" data-magnetic>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
                     </div>
                 </div>
-                <form class="contact-form glass" id="contactForm">
+                <form class="contact-form glass tilt-card" id="contactForm">
                     <div class="form-grid">
                         <div class="form-group">
                             <label for="name">Họ và Tên *</label>
-                            <input type="text" id="name" name="name" placeholder="Nguyễn Văn A" required>
+                            <input type="text" id="name" name="name" placeholder="Dương Văn A" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email *</label>
@@ -475,7 +634,7 @@
                         <textarea id="message" name="message" rows="5"
                             placeholder="Hãy cho tôi biết về dự án hoặc yêu cầu của bạn..." required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Gửi Tin Nhắn</button>
+                    <button type="submit" class="btn btn-primary" data-magnetic>Gửi Tin Nhắn</button>
                 </form>
             </div>
         </div>
@@ -484,9 +643,13 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025. Designed by <strong>Lam</strong>. All rights reserved.</p>
+            <p>&copy; 2026 Dương Quốc Lâm. Software & AI Engineer. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Custom Cursor -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-outline"></div>
 
     <script src="script.js"></script>
 </body>
